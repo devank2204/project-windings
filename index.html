@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wingdings Translator – Convert Text to Wingdings Online (Free)</title>
-    <meta name="description" content="Free Wingdings translator converts text to Wingdings symbols instantly. Includes Gaster mode for Undertale fans. Copy, download or explore Unicode mappings.">
-    <meta name="keywords" content="wingdings translator, gaster translator, wingdings to unicode, undertale gaster, wingdings converter, dingbat translator">
+    <meta name="description" content="Professional Wingdings translator with dark mode. Convert text to Wingdings symbols instantly. Includes Gaster mode for Undertale fans. Copy, download, explore mappings.">
+    <meta name="keywords" content="wingdings translator, gaster translator, wingdings to unicode, undertale gaster, wingdings converter, professional tool">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Wingdings Converter">
-    <link rel="canonical" href="https://wingdings-converter.netlify.app/">
+    <link rel="canonical" href="https://wingdings-translator.netlify.app/">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Free Wingdings & Gaster Translator - Convert Text Online">
-    <meta property="og:description" content="Transform text into Wingdings symbols or Undertale Gaster language. Complete Unicode mapping, copy/paste ready, download options.">
+    <meta property="og:title" content="Professional Wingdings & Gaster Translator - Free Online Tool">
+    <meta property="og:description" content="Transform text into Wingdings symbols with our polished, professional translator. Dark mode, smooth animations, instant conversion.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wingdings-converter.netlify.app/">
+    <meta property="og:url" content="https://wingdings-translator.netlify.app/">
     <meta property="og:site_name" content="Wingdings Translator">
     <meta property="og:locale" content="en_US">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Free Wingdings & Gaster Translator - Convert Text Online">
-    <meta name="twitter:description" content="Transform text into Wingdings symbols or Undertale Gaster language. Complete Unicode mapping, copy/paste ready, download options.">
+    <meta name="twitter:title" content="Professional Wingdings & Gaster Translator - Free Online Tool">
+    <meta name="twitter:description" content="Transform text into Wingdings symbols with our polished, professional translator. Dark mode, smooth animations, instant conversion.">
     
     <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
     <!-- Structured Data - SoftwareApplication -->
     <script type="application/ld+json">
@@ -32,8 +35,8 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "Wingdings Translator",
-        "description": "Free online tool to convert text to Wingdings symbols and Gaster language from Undertale",
-        "url": "https://wingdings-converter.netlify.app/",
+        "description": "Professional online tool to convert text to Wingdings symbols and Gaster language from Undertale with dark mode and smooth animations",
+        "url": "https://wingdings-translator.netlify.app/",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Any",
         "offers": {
@@ -45,9 +48,11 @@
             "Instant text-to-Wingdings conversion",
             "Gaster mode for Undertale fans",
             "Complete Unicode mapping",
+            "Dark mode with smooth transitions",
             "Copy to clipboard functionality",
             "Download as PNG/SVG options",
             "Symbol gallery and reference",
+            "Professional animations",
             "Mobile-responsive design",
             "No registration required"
         ]
@@ -78,41 +83,11 @@
             },
             {
                 "@type": "Question",
-                "name": "Can I download the Wingdings font?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Wingdings is copyrighted by Microsoft. It comes pre-installed with Windows and Microsoft Office products. This tool provides Unicode equivalents that work across all platforms."
-                }
-            },
-            {
-                "@type": "Question",
                 "name": "How do I copy Wingdings symbols?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Use our translator to convert text, then click the copy button to copy Unicode equivalents that work across platforms without needing the Wingdings font installed."
                 }
-            }
-        ]
-    }
-    </script>
-    
-    <!-- Breadcrumb Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://wingdings-converter.netlify.app/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Wingdings Translator",
-                "item": "https://wingdings-converter.netlify.app/"
             }
         ]
     }
@@ -127,16 +102,48 @@
     <!-- Header -->
     <header class="header" role="banner">
         <div class="container">
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <ol>
-                    <li><a href="/">Home</a></li>
-                    <li aria-current="page">Wingdings Translator</li>
-                </ol>
-            </nav>
-            <h1>Wingdings Translator – Convert Text to Wingdings Online (Free)</h1>
-            <p class="header-description">
-                Transform any text into Wingdings symbols or Undertale's Gaster language instantly. Our free translator supports complete Unicode mapping, copy/paste functionality, and download options. No registration required – start converting text to mysterious symbols in seconds.
-            </p>
+            <div class="header-top">
+                <div class="logo-section">
+                    <div class="logo">
+                        <i data-lucide="wand-2" class="logo-icon"></i>
+                        <span class="logo-text">WingTranslate</span>
+                    </div>
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <ol>
+                            <li><a href="/">Home</a></li>
+                            <li aria-current="page">Wingdings Translator</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="header-actions">
+                    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i data-lucide="sun" class="theme-icon theme-icon--light"></i>
+                        <i data-lucide="moon" class="theme-icon theme-icon--dark"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-section">
+                <h1 class="hero-title">Professional Wingdings & Gaster Translator</h1>
+                <p class="hero-description">
+                    Transform any text into Wingdings symbols or Undertale's mysterious Gaster language instantly. 
+                    Our professional translator features dark mode, smooth animations, and complete Unicode mapping.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-badge">
+                        <i data-lucide="zap" class="feature-icon"></i>
+                        Instant Translation
+                    </div>
+                    <div class="feature-badge">
+                        <i data-lucide="download" class="feature-icon"></i>
+                        Export Options
+                    </div>
+                    <div class="feature-badge">
+                        <i data-lucide="moon" class="feature-icon"></i>
+                        Dark Mode
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -146,167 +153,222 @@
             
             <!-- Tool Interface -->
             <section class="tool-section" aria-labelledby="tool-heading">
-                <div class="card">
-                    <div class="card__body">
-                        <div class="tool-controls">
-                            <div class="mode-toggle" role="radiogroup" aria-labelledby="mode-label">
-                                <span id="mode-label" class="form-label">Translation Mode:</span>
-                                <button type="button" class="btn btn--secondary mode-btn active" data-mode="wingdings" aria-pressed="true">
-                                    Standard Wingdings
-                                </button>
-                                <button type="button" class="btn btn--secondary mode-btn" data-mode="gaster" aria-pressed="false">
-                                    Gaster Mode
-                                </button>
-                            </div>
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <h2 id="tool-heading">Translator</h2>
+                        <div class="mode-toggle" role="radiogroup" aria-labelledby="mode-label">
+                            <span id="mode-label" class="mode-label">Mode:</span>
+                            <button type="button" class="mode-btn mode-btn--active" data-mode="wingdings" aria-pressed="true">
+                                <i data-lucide="type" class="mode-icon"></i>
+                                Wingdings
+                            </button>
+                            <button type="button" class="mode-btn" data-mode="gaster" aria-pressed="false">
+                                <i data-lucide="skull" class="mode-icon"></i>
+                                Gaster
+                            </button>
                         </div>
-                        
-                        <div class="translator-interface">
-                            <div class="input-section">
-                                <label for="text-input" class="form-label">Enter your text:</label>
+                    </div>
+                    
+                    <div class="translator-grid">
+                        <div class="input-panel">
+                            <div class="panel-header">
+                                <label for="text-input" class="panel-title">
+                                    <i data-lucide="edit-3" class="panel-icon"></i>
+                                    Input Text
+                                </label>
+                                <div class="char-counter">
+                                    <span id="char-count">0</span>
+                                    <span class="char-label">characters</span>
+                                </div>
+                            </div>
+                            <div class="input-container">
                                 <textarea 
                                     id="text-input" 
-                                    class="form-control text-input" 
-                                    placeholder="Type your text here..."
-                                    rows="4"
-                                    aria-describedby="char-count input-help"
+                                    class="text-input" 
+                                    placeholder="Type your text here to see the magic happen..."
+                                    rows="6"
+                                    aria-describedby="input-help"
                                 ></textarea>
-                                <div class="input-meta">
-                                    <small id="input-help" class="text-secondary">
-                                        Type any text to see instant Wingdings conversion
-                                    </small>
-                                    <span id="char-count" class="char-count">0 characters</span>
+                                <div class="input-actions">
+                                    <button type="button" class="action-btn action-btn--secondary" id="clear-btn">
+                                        <i data-lucide="x" class="btn-icon"></i>
+                                        Clear
+                                    </button>
                                 </div>
                             </div>
-                            
-                            <div class="output-section">
-                                <label for="output-display" class="form-label">Wingdings Output:</label>
-                                <div id="output-display" class="output-display" role="region" aria-live="polite" aria-label="Converted Wingdings text">
-                                    <span class="placeholder-text">Your converted text will appear here...</span>
+                            <small id="input-help" class="input-help">
+                                Type any text to see instant Wingdings conversion
+                            </small>
+                        </div>
+                        
+                        <div class="output-panel">
+                            <div class="panel-header">
+                                <div class="panel-title">
+                                    <i data-lucide="sparkles" class="panel-icon"></i>
+                                    Wingdings Output
                                 </div>
-                                
-                                <div class="action-buttons">
-                                    <button type="button" class="btn btn--primary copy-btn" id="copy-btn" disabled>
-                                        📋 Copy Text
+                                <div class="output-status" id="output-status">
+                                    <span class="status-dot"></span>
+                                    Ready
+                                </div>
+                            </div>
+                            <div class="output-container">
+                                <div id="output-display" class="output-display" role="region" aria-live="polite" aria-label="Converted Wingdings text">
+                                    <div class="output-placeholder">
+                                        <i data-lucide="arrow-left" class="placeholder-icon"></i>
+                                        <span>Your magical symbols will appear here</span>
+                                    </div>
+                                </div>
+                                <div class="output-actions">
+                                    <button type="button" class="action-btn action-btn--primary" id="copy-btn" disabled>
+                                        <i data-lucide="copy" class="btn-icon"></i>
+                                        <span class="btn-text">Copy</span>
                                     </button>
-                                    <button type="button" class="btn btn--secondary download-png-btn" id="download-png-btn" disabled>
-                                        🖼️ Download PNG
+                                    <button type="button" class="action-btn action-btn--secondary" id="download-png-btn" disabled>
+                                        <i data-lucide="image" class="btn-icon"></i>
+                                        PNG
                                     </button>
-                                    <button type="button" class="btn btn--secondary download-svg-btn" id="download-svg-btn" disabled>
-                                        📄 Download SVG
+                                    <button type="button" class="action-btn action-btn--secondary" id="download-svg-btn" disabled>
+                                        <i data-lucide="file-image" class="btn-icon"></i>
+                                        SVG
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Quick Answer Section -->
-            <section class="quick-answer" aria-labelledby="quick-answer-heading">
-                <h2 id="quick-answer-heading">How to Use the Wingdings Translator</h2>
-                <div class="answer-grid">
-                    <div class="answer-card">
-                        <h3>What are Wingdings?</h3>
-                        <p>Wingdings is a decorative font created by Microsoft that replaces standard letters with symbols, arrows, and pictographs. Originally released in 1990, it maps each keyboard character to a unique symbol in the Private Use Area of Unicode.</p>
-                    </div>
-                    <div class="answer-card">
-                        <h3>Gaster Connection</h3>
-                        <p>In the indie game Undertale, the mysterious character W.D. Gaster speaks using Wingdings symbols, creating an enigmatic language that fans have embraced. Our Gaster mode focuses on the uppercase variants used in the game.</p>
-                    </div>
-                    <div class="answer-card">
-                        <h3>Simple Steps</h3>
-                        <ol>
-                            <li>Type or paste your text in the input field</li>
-                            <li>Choose between Standard or Gaster mode</li>
-                            <li>Copy the converted symbols or download as image</li>
-                            <li>Use the symbol reference below for individual characters</li>
-                        </ol>
                     </div>
                 </div>
             </section>
 
             <!-- Symbol Reference -->
-            <section class="symbol-reference" aria-labelledby="reference-heading">
-                <h2 id="reference-heading">Wingdings Symbol Reference</h2>
-                <div class="card">
-                    <div class="card__body">
-                        <div class="reference-controls">
-                            <div class="search-bar">
-                                <label for="symbol-search" class="form-label">Search symbols:</label>
+            <section class="reference-section" aria-labelledby="reference-heading">
+                <div class="section-header">
+                    <h2 id="reference-heading">Symbol Reference</h2>
+                    <p class="section-description">Explore the complete mapping of characters to Wingdings symbols</p>
+                </div>
+                
+                <div class="reference-card">
+                    <div class="reference-controls">
+                        <div class="search-container">
+                            <div class="search-input-wrapper">
+                                <i data-lucide="search" class="search-icon"></i>
                                 <input 
                                     type="text" 
                                     id="symbol-search" 
-                                    class="form-control" 
-                                    placeholder="Search by character or symbol..."
+                                    class="search-input" 
+                                    placeholder="Search symbols or characters..."
                                     aria-describedby="search-help"
                                 >
-                                <small id="search-help" class="text-secondary">
-                                    Find specific character mappings
-                                </small>
+                                <button type="button" class="search-clear" id="search-clear" aria-label="Clear search">
+                                    <i data-lucide="x" class="clear-icon"></i>
+                                </button>
                             </div>
-                            
-                            <div class="category-filters">
-                                <span class="form-label">Filter by category:</span>
-                                <div class="filter-buttons">
-                                    <button type="button" class="btn btn--sm btn--secondary filter-btn active" data-filter="all">All</button>
-                                    <button type="button" class="btn btn--sm btn--secondary filter-btn" data-filter="letters">Letters</button>
-                                    <button type="button" class="btn btn--sm btn--secondary filter-btn" data-filter="numbers">Numbers</button>
-                                    <button type="button" class="btn btn--sm btn--secondary filter-btn" data-filter="symbols">Symbols</button>
-                                </div>
-                            </div>
+                            <small id="search-help" class="search-help">
+                                Find specific character mappings
+                            </small>
                         </div>
                         
-                        <div class="symbol-grid" id="symbol-grid" role="grid" aria-label="Character to symbol mapping">
-                            <!-- Will be populated by JavaScript -->
+                        <div class="filter-container">
+                            <span class="filter-label">Filter:</span>
+                            <div class="filter-buttons">
+                                <button type="button" class="filter-btn filter-btn--active" data-filter="all">
+                                    <i data-lucide="grid-3x3" class="filter-icon"></i>
+                                    All
+                                </button>
+                                <button type="button" class="filter-btn" data-filter="letters">
+                                    <i data-lucide="type" class="filter-icon"></i>
+                                    Letters
+                                </button>
+                                <button type="button" class="filter-btn" data-filter="numbers">
+                                    <i data-lucide="hash" class="filter-icon"></i>
+                                    Numbers
+                                </button>
+                                <button type="button" class="filter-btn" data-filter="symbols">
+                                    <i data-lucide="asterisk" class="filter-icon"></i>
+                                    Symbols
+                                </button>
+                            </div>
                         </div>
+                    </div>
+                    
+                    <div class="symbol-grid" id="symbol-grid" role="grid" aria-label="Character to symbol mapping">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Guide Section -->
+            <section class="guide-section" aria-labelledby="guide-heading">
+                <div class="section-header">
+                    <h2 id="guide-heading">How It Works</h2>
+                    <p class="section-description">Three simple steps to transform your text into mystical symbols</p>
+                </div>
+                
+                <div class="guide-grid">
+                    <div class="guide-step">
+                        <div class="step-icon">
+                            <i data-lucide="edit-3"></i>
+                            <span class="step-number">1</span>
+                        </div>
+                        <h3 class="step-title">Enter Text</h3>
+                        <p class="step-description">Type or paste any text into the input field. Watch as it transforms in real-time.</p>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-icon">
+                            <i data-lucide="settings"></i>
+                            <span class="step-number">2</span>
+                        </div>
+                        <h3 class="step-title">Choose Mode</h3>
+                        <p class="step-description">Select between standard Wingdings or mysterious Gaster mode from Undertale.</p>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-icon">
+                            <i data-lucide="share"></i>
+                            <span class="step-number">3</span>
+                        </div>
+                        <h3 class="step-title">Copy & Share</h3>
+                        <p class="step-description">Copy your converted symbols or download as PNG/SVG for any project.</p>
                     </div>
                 </div>
             </section>
 
             <!-- FAQ Section -->
             <section class="faq-section" aria-labelledby="faq-heading">
-                <h2 id="faq-heading">Frequently Asked Questions</h2>
+                <div class="section-header">
+                    <h2 id="faq-heading">Frequently Asked Questions</h2>
+                    <p class="section-description">Everything you need to know about Wingdings and our translator</p>
+                </div>
+                
                 <div class="faq-grid">
-                    <div class="faq-item card">
-                        <div class="card__body">
-                            <h3>What are Wingdings?</h3>
-                            <p>Wingdings is a series of dingbat fonts developed by Microsoft in 1990 that display symbols instead of letters. It's commonly used for decorative purposes and has gained popularity in internet culture, particularly through the Undertale game's Gaster character.</p>
-                        </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <i data-lucide="help-circle" class="faq-icon"></i>
+                            What are Wingdings?
+                        </h3>
+                        <p class="faq-answer">Wingdings is a decorative font created by Microsoft that replaces standard letters with symbols, arrows, and pictographs. Originally released in 1990, it has become iconic in internet culture.</p>
                     </div>
                     
-                    <div class="faq-item card">
-                        <div class="card__body">
-                            <h3>Is Wingdings the same as Gaster language?</h3>
-                            <p>Gaster language from the video game Undertale uses Wingdings symbols, primarily uppercase variants, to represent mysterious dialogue from the character W.D. Gaster. Our tool includes a special Gaster mode that focuses on these specific character mappings.</p>
-                        </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <i data-lucide="skull" class="faq-icon"></i>
+                            What is Gaster mode?
+                        </h3>
+                        <p class="faq-answer">Gaster mode converts text using the mysterious character W.D. Gaster's language from Undertale, which primarily uses uppercase Wingdings symbols for cryptic dialogue.</p>
                     </div>
                     
-                    <div class="faq-item card">
-                        <div class="card__body">
-                            <h3>Can I download the Wingdings font?</h3>
-                            <p>Wingdings is copyrighted by Microsoft and comes pre-installed with Windows and Microsoft Office products. This tool provides Unicode equivalents that work across all platforms without needing the actual font installed.</p>
-                        </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <i data-lucide="download" class="faq-icon"></i>
+                            Can I download my converted text?
+                        </h3>
+                        <p class="faq-answer">Yes! You can export your Wingdings text as PNG or SVG files for use in designs, presentations, or any creative project.</p>
                     </div>
                     
-                    <div class="faq-item card">
-                        <div class="card__body">
-                            <h3>How do I copy Wingdings symbols?</h3>
-                            <p>Use our translator to convert text, then click the copy button to copy Unicode equivalents that work across platforms without needing the Wingdings font installed. The symbols will paste correctly in most applications.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item card">
-                        <div class="card__body">
-                            <h3>Are the downloaded images free to use?</h3>
-                            <p>Yes, the PNG and SVG files generated by our tool are free to use for personal and commercial projects. However, remember that Wingdings is a Microsoft trademark, so attribute appropriately if using in commercial contexts.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item card">
-                        <div class="card__body">
-                            <h3>Does this work on mobile devices?</h3>
-                            <p>Absolutely! Our translator is fully responsive and optimized for mobile devices. The copy functionality works on modern mobile browsers, and all features are touch-friendly.</p>
-                        </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <i data-lucide="smartphone" class="faq-icon"></i>
+                            Does this work on mobile?
+                        </h3>
+                        <p class="faq-answer">Absolutely! Our translator is fully responsive and optimized for mobile devices with touch-friendly interactions and smooth animations.</p>
                     </div>
                 </div>
             </section>
@@ -318,32 +380,53 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>About This Tool</h4>
-                    <p>Free online Wingdings translator providing accurate Unicode mappings and Gaster language support for Undertale fans.</p>
+                    <h4 class="footer-title">
+                        <i data-lucide="wand-2" class="footer-icon"></i>
+                        WingTranslate
+                    </h4>
+                    <p class="footer-text">Professional Wingdings translator with modern design and smooth animations. Transform text into mysterious symbols instantly.</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Attribution</h4>
-                    <p>Character mappings referenced from <a href="https://www.alanwood.net/demos/wingdings.html" target="_blank" rel="noopener noreferrer">Alan Wood's Unicode Resources</a> and Microsoft documentation.</p>
-                    <p><small>Wingdings™ is a trademark of Microsoft Corporation.</small></p>
+                    <h4 class="footer-title">Features</h4>
+                    <ul class="footer-list">
+                        <li><i data-lucide="check" class="list-icon"></i>Instant conversion</li>
+                        <li><i data-lucide="check" class="list-icon"></i>Dark mode support</li>
+                        <li><i data-lucide="check" class="list-icon"></i>Export options</li>
+                        <li><i data-lucide="check" class="list-icon"></i>Gaster mode</li>
+                    </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>For questions or feedback about this tool, please reach out through our <a href="/contact">contact page</a>.</p>
+                    <h4 class="footer-title">Attribution</h4>
+                    <p class="footer-text">Character mappings referenced from Unicode standards and Microsoft documentation.</p>
+                    <p class="footer-note">Wingdings™ is a trademark of Microsoft Corporation.</p>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Wingdings Translator. Made with accessibility and SEO best practices.</p>
+                <p>&copy; 2025 WingTranslate. Crafted with precision and care for the digital age.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Success/Error Messages -->
-    <div id="notification" class="notification hidden" role="alert" aria-live="assertive">
-        <span class="notification-text"></span>
-        <button type="button" class="notification-close" aria-label="Close notification">&times;</button>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive">
+        <div class="toast-content">
+            <i class="toast-icon" data-lucide="check"></i>
+            <span class="toast-text"></span>
+        </div>
+        <button type="button" class="toast-close" aria-label="Close notification">
+            <i data-lucide="x"></i>
+        </button>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <i data-lucide="loader-2" class="spinner-icon"></i>
+            <span class="loading-text">Processing...</span>
+        </div>
     </div>
 
     <script src="app.js"></script>
