@@ -1,3 +1,24 @@
+# Robots.txt for Wingdings Translator SEO optimization
 User-agent: *
 Allow: /
-Sitemap: https://wingdingstranslator.space/sitemap.xml
+
+# Block admin and private areas (when added)
+# devank add: Add any private/admin URLs here that shouldn't be crawled
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow important SEO pages
+Allow: /about
+Allow: /contact
+Allow: /privacy
+Allow: /terms
+Allow: /author
+Allow: /blog
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://wingdings-translator.netlify.app/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1
