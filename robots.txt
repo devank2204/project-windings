@@ -9,13 +9,13 @@ Disallow: /private/
 Disallow: /*.json$
 
 # Allow important SEO pages
-Allow: /about
-Allow: /contact
-Allow: /privacy
-Allow: /terms
-Allow: /author
-Allow: /blog
-Allow: /sitemap.xml
+# Allow: /about
+# Allow: /contact
+# Allow: /privacy
+# Allow: /terms
+# Allow: /author
+# Allow: /blog
+# Allow: /sitemap.xml
 
 # Sitemap location
 Sitemap: https://wingdings-translator.netlify.app/sitemap.xml
