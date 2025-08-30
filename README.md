@@ -1,1 +1,55 @@
 # project-windings
+
+
+  <!-- <url>
+    <loc>https://wingdings-translator.netlify.app/about</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url> -->
+  
+  <!-- <url>
+    <loc>https://wingdings-translator.netlify.app/contact</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url> -->
+  
+  <!-- <url>
+    <loc>https://wingdings-translator.netlify.app/privacy</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url> -->
+  
+  <!-- <url>
+    <loc>https://wingdings-translator.netlify.app/terms</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url> -->
+  
+  <!-- <url>
+    <loc>https://wingdings-translator.netlify.app/author</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url> -->
+  
+  <!-- <url>
+    <loc>https://wingdings-translator.netlify.app/blog</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url> -->
+  
+  <!-- devank add: Add new blog posts and pages here following the same pattern -->
+  <!-- Example blog post entry:
+  <url>
+    <loc>https://wingdings-translator.netlify.app/blog/how-to-use-wingdings</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  -->
+  
